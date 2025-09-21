@@ -1,0 +1,13 @@
+<div class="producto-list-container">
+  <h2>Lista de Productos</h2>
+  <div class="action-buttons">
+    <button class="btn-nuevo" routerLink="/productos/nuevo">Nuevo producto</button>
+  </div>
+  <div class="productos-grid">
+    @for (prod of productos; track prod.id) {
+      <app-producto-card [producto]="prod"></app-producto-card>
+    } @empty {
+      <p class="no-productos">No hay productos disponibles</p>
+    }
+  </div>
+</div>

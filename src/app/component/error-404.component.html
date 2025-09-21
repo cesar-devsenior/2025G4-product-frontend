@@ -1,0 +1,23 @@
+<div class="error-container">
+  <div class="error-content">
+    <div class="error-icon">
+      <h1>404</h1>
+    </div>
+    
+    <div class="error-message">
+      <h2>¡Oops! Página no encontrada</h2>
+      <p>La página que estás buscando no existe o ha sido movida.</p>
+    </div>
+    
+    <div class="error-actions">
+      <a routerLink="/productos" class="btn-home">
+        <i class="icon">🏠</i>
+        Volver al Inicio
+      </a>
+      <button (click)="goBack()" class="btn-back">
+        <i class="icon">←</i>
+        Volver Atrás
+      </button>
+    </div>
+  </div>
+</div>
